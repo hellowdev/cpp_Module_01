@@ -1,6 +1,6 @@
 CXX = c++
 
-Name = myprog
+NAME = myprog
 
 CXXFLAGS = -Wall -Wextra -Werror
 
@@ -8,10 +8,11 @@ SRC = newZombie.cpp randomChump.cpp  Zombie.cpp main.cpp
 
 OBJ = ${SRC:.cpp=.o}
 
-all: $(Name)
+all: $(NAME)
 
-$(Name) : $(OBJ) Zombie.hpp
-	@$(CXX) $(CXXFLAGS) $(OBJ) -o $(Name)
+$(NAME) : $(OBJ)
+	@$(CXX) $(CXXFLAGS) $(OBJ) -o $(NAME)
+	
 %.o : %.cpp Zombie.hpp
 	@$(CXX) $(CXXFLAGS) -c $< -o $@
 
