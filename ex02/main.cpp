@@ -18,25 +18,3 @@ int main()
     std::cout << "The value pointed to by stringPTR: "<< *stringPTR << '\n';
     std::cout << "The value pointed to by stringREF: "<< stringREF << '\n';
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

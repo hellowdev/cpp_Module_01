@@ -12,8 +12,7 @@ void Harl::info()
 
 void Harl::warning()
 {
-    std::cout << "I think I deserve to have some extra bacon for free. I’ve been coming for \
-    years, whereas you started working here just last month.\n";
+    std::cout << "I think I deserve to have some extra bacon for free. I’ve been coming for years, whereas you started working here just last month.\n";
 }
 
 void Harl::error()
@@ -27,7 +26,13 @@ void Harl::complain(std::string level)
     while (((i < 0 && level.compare("DEBUG") == 0) || (i < 1 && level.compare("INFO") == 0))
     || (i < 2 && level.compare("WARNING") == 0) || (i < 3 && level.compare("ERROR") == 0))
         i++;
-    while(i == -1)
-        return ;
+    switch (i)
+    {
+        case -1:
+            return ;
+        default:
+            break;
+    }
     (this->*ptr[i])();
+    
 }

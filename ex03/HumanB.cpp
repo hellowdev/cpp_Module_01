@@ -1,6 +1,4 @@
 #include "HumanB.hpp"
-#include <iostream>
-
 
 void HumanB::setWeapon(Weapon &club)
 {

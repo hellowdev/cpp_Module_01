@@ -7,8 +7,6 @@ int main()
     
     randomChump("stack");
     heapZomb = newZombie("heap");
-    if (heapZomb == nullptr)
-        return (1);
     heapZomb->announce();
     delete heapZomb; // delete invoke destructor before deallocating memory
 }

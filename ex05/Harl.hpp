@@ -1,7 +1,6 @@
 #ifndef HARL_HPP
 #define HARL_HPP
 #include <iostream>
-#include <array>
 
 class Harl
 {
@@ -20,6 +19,7 @@ class Harl
             ptr[3] = &Harl::error;
         };
         ~Harl(){};
-        void complain( std::string level );        
+        void complain( std::string level );     
 };
+
 #endif

@@ -7,10 +7,10 @@ Zombie::Zombie(std::string newname)
 
 void Zombie::announce( void )
 {
-    std::cout << name << ": BraiiiiiiinnnzzzZ..." << std::endl;
+    std::cout << name << ": BraiiiiiiinnnzzzZ...\n";
 }
 
 Zombie::~Zombie()
 { 
-    std::cout << name << ": Everything is Cleanup..." << std::endl;
+    std::cout << name << ": Everything is Cleanup...\n";
 } // automatic cleanup by Freeing allocated memor inside object, closing files, ex...

@@ -2,6 +2,7 @@
 #define REPLACE_HPP
 #include <fstream>
 #include <iostream>
+#include <sstream>
 
 class SedWin
 {
