@@ -12,9 +12,8 @@ class SedWin
     public:
         void replace(std::string file, std::string s1, std::string s2);
         bool outFile(std::string str);
-        SedWin(){};
-        ~SedWin(){};
+        SedWin();
+        ~SedWin();
 };
-
 
 #endif

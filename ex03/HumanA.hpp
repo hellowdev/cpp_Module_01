@@ -9,8 +9,7 @@ class HumanA
         Weapon &weaponA; // declaration reference only not object yet otherwise default constructor
         std::string name;
     public:
-        HumanA(std::string takeName, Weapon &takeObj) : 
-        weaponA(takeObj), name(takeName) {}; // we need initialize the reference or error..
+        HumanA(std::string takeName, Weapon &takeObj);
         ~HumanA();
         void attack();
 };

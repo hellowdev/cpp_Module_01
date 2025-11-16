@@ -4,7 +4,7 @@ NAME = myprog
 
 CXXFLAGS = -Wall -Wextra -Werror
 
-SRC = Replace.cpp main.cpp
+SRC = SedWin.cpp main.cpp
 
 OBJ = ${SRC:.cpp=.o}
 
@@ -13,7 +13,7 @@ all: $(NAME)
 $(NAME) : $(OBJ)
 	@$(CXX) $(CXXFLAGS) $(OBJ) -o $(NAME)
 	
-%.o : %.cpp Replace.hpp
+%.o : %.cpp SedWin.hpp
 	@$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean :

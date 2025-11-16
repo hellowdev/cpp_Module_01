@@ -1,5 +1,15 @@
 #include "Harl.hpp"
 
+Harl::Harl()
+{
+    ptr[0] = &Harl::debug;
+    ptr[1] = &Harl::info;
+    ptr[2] = &Harl::warning;
+    ptr[3] = &Harl::error;
+}
+
+Harl::~Harl(){}
+
 void Harl::debug()
 {
     std::cout << "I love having extra bacon for my 7XL-double-cheese-triple-pickle-specialketchup burger. I really do!\n";

@@ -11,14 +11,8 @@ class Harl
         void error( void );
         void (Harl::*ptr[4])();
     public:
-        Harl()
-        {
-            ptr[0] = &Harl::debug;
-            ptr[1] = &Harl::info;
-            ptr[2] = &Harl::warning;
-            ptr[3] = &Harl::error;
-        };
-        ~Harl(){};
+        Harl();
+        ~Harl();
         void complain( std::string level );        
 };
 #endif

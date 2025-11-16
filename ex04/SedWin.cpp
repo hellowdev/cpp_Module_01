@@ -1,4 +1,7 @@
-#include "Replace.hpp"
+#include "SedWin.hpp"
+
+SedWin::SedWin(){}
+SedWin::~SedWin(){}
 
 void SedWin::replace(std::string file, std::string s1, std::string s2)
 {
